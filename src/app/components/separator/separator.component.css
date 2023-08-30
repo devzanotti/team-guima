@@ -1,0 +1,11 @@
+.container__separator{
+    width: 100%;
+}
+.separator-orange{
+    background-color: #FB5A07;
+    height: 6px;
+}
+.separator-black{
+    background-color: black;
+    height: 4px;
+}
