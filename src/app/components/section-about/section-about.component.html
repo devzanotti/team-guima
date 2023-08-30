@@ -1,29 +1,44 @@
-
-    <div class="container__about">
-    <div class="about__background"></div>
-    <div class="about__full">
-
-        <div class="about__expand">
-        <div class="about__header">
-            <div class="header__img">
-            <img src="../../../assets/img/trofeu.jpeg" alt="treinador guima" />
-            </div>
-            <div class="about__sobre-mim">
-            <h1>SOBRE MIM</h1>
-            </div>
+<div class="container__about">
+  <div class="about__background"></div>
+  <div class="about__full">
+    <div class="about__expand">
+      <div class="about__header">
+        <div class="header__img">
+          <img src="../../../assets/img/trofeu.jpeg" alt="treinador guima" />
         </div>
-        <div class="about__button" (click) = "toggleContent()">
-            <span>+</span>
+        <div class="about__sobre-mim">
+          <h1>SOBRE MIM</h1>
         </div>
-        </div>
-
-        <div class="about__content "  [ngClass]="{'expanded': isExpanded}">
-            <div class="content__text">
-                <p>Olá, meu nome é Guilherme, mas todos me conhecem por <span>GUIMA</span>. Trabalho hoje com <span>Consultoria Online</span> há pouco mais de 2 anos e também como personal <span>presencial</span> apenas para alunos da consultoria.<br>
-                    Antes de Educador Físico eu sou <span>atleta de fisiculturismo</span>, já treino há quase <span>9 anos</span>. Mesmo jovem, tenho uma bagagem consideravel e sempre fui apaixonado por esse estilo de vida. O fisiculturismo mudou a minha vida, me tornou uma pessoa melhor <span>não apenas fisicamente, mas também mentalmente</span>.<br> 
-                    Hoje meu principal objetivo não é apenas mudar o físico das pessoas, pois considero isso fácil, qualquer pessoa que esteja realmente disposta a mudar consegue excelentes resultados em 6-8 meses, mas o grande problema está no <span>“e depois?”</span>.  <br>
-                    Se você não mudar o seu estilo de vida e os seus hábitos, é muito provável que você não consiga manter esses resultados a longo prazo. Então meu trabalho não se resume apenas em uma dieta e um treino, mas num <span>acompanhamento</span> que pode <span>mudar a sua vida</span>, é óbvio, se você realmente quiser mudar.<br>  </p>
-            </div>
-        </div>
+      </div>
+      <div class="about__button" (click)="toggleContent()">
+        <span>+</span>
+      </div>
     </div>
+
+    <div class="about__content" [ngClass]="{ expanded: isExpanded }">
+      <div class="content__text">
+        <p>
+          Olá, meu nome é Guilherme, mas todos me conhecem por
+          <span>GUIMA</span>. Trabalho hoje com
+          <span>Consultoria Online</span> há pouco mais de 2 anos e também como
+          personal <span>presencial</span> apenas para alunos da consultoria.<br />
+          Antes de Educador Físico eu sou <span>atleta de fisiculturismo</span>,
+          já treino há quase <span>9 anos</span>. Mesmo jovem, tenho uma bagagem
+          consideravel e sempre fui apaixonado por esse estilo de vida. O
+          fisiculturismo mudou a minha vida, me tornou uma pessoa melhor
+          <span>não apenas fisicamente, mas também mentalmente</span>.<br />
+          Hoje meu principal objetivo não é apenas mudar o físico das pessoas,
+          pois considero isso fácil, qualquer pessoa que esteja realmente
+          disposta a mudar consegue excelentes resultados em 6-8 meses, mas o
+          grande problema está no <span>“e depois?”</span>. <br />
+          Se você não mudar o seu estilo de vida e os seus hábitos, é muito
+          provável que você não consiga manter esses resultados a longo prazo.
+          Então meu trabalho não se resume apenas em uma dieta e um treino, mas
+          num <span>acompanhamento</span> que pode
+          <span>mudar a sua vida</span>, é óbvio, se você realmente quiser
+          mudar.<br />
+        </p>
+      </div>
     </div>
+  </div>
+</div>
