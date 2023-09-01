@@ -1,0 +1,23 @@
+.container__results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card__title {
+    text-align: center;
+    margin: 0 3VW;
+  }
+  .card__title h1 {
+    margin: 8vw auto;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: bolder;
+    /*
+    font-family: "Anton", sans-serif;   
+    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Roboto", sans-serif; */
+  }
+  .card__title h1 p {
+    font-size: 15px;
+    color: #fb5a07;
+    font-weight: bolder;
+  }

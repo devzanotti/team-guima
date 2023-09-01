@@ -10,6 +10,7 @@ import { SectionFeedbacksComponent } from './components/section-feedbacks/sectio
 import { SectionPricesComponent } from './components/section-prices/section-prices.component';
 import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { SeparatorComponent } from './components/separator/separator.component';
+import { SectionHowItWorksComponent } from './components/section-how-it-works/section-how-it-works.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SeparatorComponent } from './components/separator/separator.component';
     SectionFeedbacksComponent,
     SectionPricesComponent,
     PageHomeComponent,
-    SeparatorComponent
+    SeparatorComponent,
+    SectionHowItWorksComponent
   ],
   imports: [
     BrowserModule,
