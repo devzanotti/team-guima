@@ -1,0 +1,68 @@
+.container__prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "PT Sans Caption", sans-serif;
+}
+.content__prices {
+  width: 90%;
+}
+.prices__consultoria-online {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prices__consultoria-presencial {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vw;
+  }
+.prices__title {
+  margin: 8vw 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+}
+.card__prices {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 1vw;
+  margin-bottom: 6vw;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 15px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 3px 15px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 15px -6px rgba(0, 0, 0, 0.75);
+}
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2vw;
+}
+.card__header span{
+    color: rgba(78, 78, 78, 0.904);
+  }
+.card__vantagens ul {
+  list-style: none;
+}
+.card__vantagens li::before {
+  content: "-";
+  margin-right: 0.5vw;
+}
+.card__vantagens li {
+  display: flex;
+  align-items: flex-start;
+  color: black;
+  font-weight: bolder;
+}
+.laranja{
+    color: #fb5a07;
+}
