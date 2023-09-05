@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./section-about.component.css']
 })
 export class SectionAboutComponent {
+  isExpanded = false;
 
+  toggleContent(){    
+    this.isExpanded = !this.isExpanded;
+  }
 }
