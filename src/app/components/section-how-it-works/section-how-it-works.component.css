@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 8vw;
   }
   .card__title {
     text-align: center;
@@ -21,3 +22,112 @@
     color: #fb5a07;
     font-weight: bolder;
   }
+
+  /* ACCORDION */
+
+.results__accordion{
+  width: 80%;
+}
+  
+  .accordion li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 3vw;
+    padding: 20px;
+    border-radius: 7px;    
+    -webkit-box-shadow: 11px 7px 23px -3px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 11px 7px 23px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 11px 7px 23px -3px rgba(0, 0, 0, 0.27);
+    font-family: "PT Sans Caption", sans-serif;
+
+  }
+
+  .accordion li label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #FB5A07;
+    font-weight: bolder;
+  }
+
+  .accordion .content{
+    line-height: 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  .accordion li.open .content {
+    
+    padding-top: 10px;
+    max-height: 500px; /* Defina a altura máxima que desejar para mostrar todo o conteúdo */
+    transition: max-height 0.3s; /* Adicione uma transição suave para animar a abertura */
+  }
+
+  .accordion li.open label span i {
+    transform: rotate(180deg);
+    transition: transform 0.3s; /* Adicione uma transição suave para a rotação */
+  }
+  .accordion li label span i {
+    transform: rotate(0deg);
+    transition: transform 0.3s; /* Adicione uma transição suave para a rotação */
+  }
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*  ul{
+    list-style: none;
+  }
+
+  .accordion-menu{
+    width: 80%;
+    max-height: 350px;
+    margin: 0 auto 8vw auto;
+    background: rgb(241, 241, 241);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #000;
+  }
+
+  .accordion-menu li:last-child .dropdown{
+    border-bottom: 0;
+  }
+
+  .dropdown{
+    cursor: pointer;
+    display: block;
+    padding: 4vw;
+    border-bottom: 2px solid green;
+  } */
