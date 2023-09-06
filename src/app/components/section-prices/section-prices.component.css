@@ -14,12 +14,12 @@
   align-items: center;
 }
 .prices__consultoria-presencial {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10vw;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10vw;
+}
 .prices__title {
   margin: 8vw 0px;
   display: flex;
@@ -32,7 +32,7 @@
 .card__prices {
   display: flex;
   flex-direction: column;
-  background-color: #f9f9f9;
+  background-color: #fcfcfc;
   padding: 20px;
   margin: 1vw;
   margin-bottom: 6vw;
@@ -47,9 +47,9 @@
   align-items: baseline;
   margin-bottom: 2vw;
 }
-.card__header span{
-    color: rgba(78, 78, 78, 0.904);
-  }
+.card__header span {
+  color: rgba(78, 78, 78, 0.904);
+}
 .card__vantagens ul {
   list-style: none;
 }
@@ -63,10 +63,10 @@
   color: black;
   font-weight: bolder;
 }
-.laranja{
-    color: #fb5a07;
+.laranja {
+  color: #fb5a07;
 }
-.botao-comprar{
+.botao-comprar {
   display: flex;
   align-items: center;
   margin-bottom: 15vw;
@@ -90,12 +90,38 @@
 
 @keyframes pulse {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   50% {
-      transform: scale(1.1);
+    transform: scale(1.1);
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 1025px) {
+  .prices__title h1 {
+    font-size: 40px;
+  }
+  .prices__title {
+    margin: 3vw;
+  }
+  .card__prices {
+    margin-bottom: 2vw;
+  }
+  .alinhamento-cards {
+    display: flex;
+  }
+  .botao-comprar {
+    margin-bottom: 5vw;
+  }
+  .pulse-button {
+    width: 400px;
+    height: 100px;
+    font-size: 20px;
+  }
+  .prices__consultoria-presencial {
+    margin-bottom: 5vw;
   }
 }

@@ -7,7 +7,10 @@
   </div>
   <div class="results__accordion">
     <ul class="accordion">
-      <li *ngFor="let item of accordionItems; let i = index" [class.open]="item.isOpen">
+      <li
+        *ngFor="let item of accordionItems; let i = index"
+        [class.open]="item.isOpen"
+      >
         <label (click)="toggleAccordion(i)">
           {{ item.title }}
           <span><i class="fa-solid fa-chevron-down"></i></span>
@@ -17,7 +20,5 @@
         </div>
       </li>
     </ul>
-  </div>  
+  </div>
 </div>
-
-
