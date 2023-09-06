@@ -1,23 +1,95 @@
 .container__results {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .card__title {
-    text-align: center;
-    margin: 0 3VW;
-  }
-  .card__title h1 {
-    margin: 8vw auto;
-    font-family: "PT Sans Caption", sans-serif;
-    font-weight: bolder;
-    /*
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8vw;
+}
+.card__title {
+  text-align: center;
+  margin: 0 3vw;
+}
+.card__title h1 {
+  margin: 8vw auto;
+  font-family: "PT Sans Caption", sans-serif;
+  font-weight: bolder;
+  /*
     font-family: "Anton", sans-serif;   
     font-family: "PT Sans Caption", sans-serif;
     font-family: "Roboto", sans-serif; */
+}
+.card__title h1 p {
+  font-size: 15px;
+  color: #fb5a07;
+  font-weight: bolder;
+}
+
+/* ACCORDION */
+
+.results__accordion {
+  width: 80%;
+}
+
+.accordion li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 3vw;
+  padding: 20px;
+  border-radius: 7px;
+  -webkit-box-shadow: 11px 7px 23px -3px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 11px 7px 23px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 11px 7px 23px -3px rgba(0, 0, 0, 0.27);
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.accordion li label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fb5a07;
+  font-weight: bolder;
+}
+
+.accordion .content {
+  line-height: 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.accordion li.open .content {
+  padding-top: 10px;
+  max-height: 500px; /* Defina a altura máxima que desejar para mostrar todo o conteúdo */
+  transition: max-height 0.3s; /* Adicione uma transição suave para animar a abertura */
+}
+
+.accordion li.open label span i {
+  transform: rotate(180deg);
+  transition: transform 0.3s; /* Adicione uma transição suave para a rotação */
+}
+.accordion li label span i {
+  transform: rotate(0deg);
+  transition: transform 0.3s; /* Adicione uma transição suave para a rotação */
+}
+
+@media (min-width: 1025px) {
+  .card__title h1 {
+    margin: 3vw;
+    font-size: 40px;
   }
   .card__title h1 p {
-    font-size: 15px;
-    color: #fb5a07;
-    font-weight: bolder;
+    font-size: 17px;
   }
+
+  .results__accordion {
+    min-width: 800px;
+    width: 40%;
+  }
+  .accordion li {
+    margin-bottom: 1vw;
+  }
+  .container__results {
+    padding-bottom: 4vw;
+  }
+}
